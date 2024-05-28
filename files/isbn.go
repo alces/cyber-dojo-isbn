@@ -33,7 +33,11 @@ func stringToNumbers(isbn string) []byte {
     result := make([]byte, len(isbn))
     
     for i, c := range isbn {
-        result[i] = byte(c) - 48
+        if c >= '0' && c <= '9' {
+            result[i] = byte(c) - 48
+        } else if c == 'X' {
+            result[i] = 10
+        }
     }
     
     return result

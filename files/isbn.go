@@ -9,8 +9,10 @@ func Verify(isbn string) bool {
 }
 
 func cleanUp(isbn string) string {
-    if strings.Contains(isbn, "-") {
-        return strings.ReplaceAll(isbn, "-", "")
+    for _, c := range []string{"-", " "} {
+        if strings.Contains(isbn, c) {
+            return strings.ReplaceAll(isbn, c, "")
+        }
     }
     
     return isbn

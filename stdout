@@ -1,2 +1,10 @@
-PASS
-ok  	_/sandbox	0.008s
+--- FAIL: TestIsISBN10 (0.00s)
+    isbn_test.go:34: 
+        	Error Trace:	isbn_test.go:34
+        	Error:      	Not equal: 
+        	            	expected: false
+        	            	actual  : true
+        	Test:       	TestIsISBN10
+FAIL
+exit status 1
+FAIL	_/sandbox	0.007s

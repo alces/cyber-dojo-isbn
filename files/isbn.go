@@ -30,5 +30,11 @@ func isISBN13(isbn string) bool {
 }
 
 func stringToNumbers(isbn string) []byte {
-    return []byte{}
+    result := make([]byte, len(isbn))
+    
+    for i, c := range isbn {
+        result[i] = c - 48
+    }
+    
+    return result
 }

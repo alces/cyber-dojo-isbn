@@ -1,17 +1,2 @@
---- FAIL: TestCleanUp (0.00s)
-    isbn_test.go:9: 
-        	Error Trace:	isbn_test.go:9
-        	Error:      	Not equal: 
-        	            	expected: "0470845252"
-        	            	actual  : ""
-        	            	
-        	            	Diff:
-        	            	--- Expected
-        	            	+++ Actual
-        	            	@@ -1 +1 @@
-        	            	-0470845252
-        	            	+
-        	Test:       	TestCleanUp
-FAIL
-exit status 1
-FAIL	_/sandbox	0.004s
+PASS
+ok  	_/sandbox	0.002s

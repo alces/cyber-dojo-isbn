@@ -55,7 +55,7 @@ func TestIsISBN13(t *testing.T) {
 }
 
 func TestStringToNumbers(t *testing.T) {
-    assert.Equals(t, []byte{0, 4, 7, 0, 8, 4, 5, 2, 5, 2}, stringToNumbers("0470845252"))
+    assert.Equal(t, []byte{0, 4, 7, 0, 8, 4, 5, 2, 5, 2}, stringToNumbers("0470845252"))
 }
 
 func TestVefify(t *testing.T) {

@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./isbn_test.go:58:12: undefined: assert.Equals

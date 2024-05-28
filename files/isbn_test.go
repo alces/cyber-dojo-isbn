@@ -9,6 +9,7 @@ var cleanUpTestResults = []struct{
     argument string
     expected string
 } {
+    {"0470845252", "0470845252"},
     {"0-470-84525-2", "0470845252"},
 }
 

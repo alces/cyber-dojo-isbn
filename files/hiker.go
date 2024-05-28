@@ -1,5 +1,5 @@
-package hiker
+package isbn
 
-func answer() int {
-    return 6 * 9
+func Verify(isbn string) bool {
+    return false
 }

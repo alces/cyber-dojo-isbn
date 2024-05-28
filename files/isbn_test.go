@@ -16,7 +16,7 @@ var cleanUpTestResults = []struct{
 
 func TestCleanUp(t *testing.T) {
     for _, r := range cleanUpTestResults {
-        assert.Equal(t, r.expected, cleanUp(r.argument))
+        assert.Equal(t, r.expected, cleanUp(r.argument), r.argument)
     }
 }
 
@@ -31,7 +31,7 @@ var isISBN10TestResults = []struct {
 
 func TestIsISBN10(t *testing.T) {
     for _, r := range isISBN10TestResults {
-        assert.Equal(t, r.expected, isISBN10(r.argument))
+        assert.Equal(t, r.expected, isISBN10(r.argument), r.argument)
     }
 }
 

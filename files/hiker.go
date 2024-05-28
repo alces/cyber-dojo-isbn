@@ -1,5 +1,5 @@
 package isbn
 
 func Verify(isbn string) bool {
-    return false
+    return len(isbn) >= 10
 }

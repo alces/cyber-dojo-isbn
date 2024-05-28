@@ -33,7 +33,7 @@ func stringToNumbers(isbn string) []byte {
     result := make([]byte, len(isbn))
     
     for i, c := range isbn {
-        result[i] = c - 48
+        result[i] = byte(c) - 48
     }
     
     return result

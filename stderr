@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./isbn.go:36:21: cannot use c - 48 (value of type rune) as type byte in assignment

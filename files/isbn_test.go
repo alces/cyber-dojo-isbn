@@ -45,6 +45,7 @@ var isISBN13TestResults = []struct {
 } {
     {"9780470059029", true},
     {"978047005902", false},
+    {"97804700590293", false},
 }
 
 func TestIsISBN13(t *testing.T) {

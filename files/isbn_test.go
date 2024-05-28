@@ -59,6 +59,7 @@ var stringToNumbersTestResults = []struct {
     expected []byte
 } {
     {"0470845252", []byte{0, 4, 7, 0, 8, 4, 5, 2, 5, 2}},
+    {"847084525X", []byte{8, 4, 7, 0, 8, 4, 5, 2, 5, 10}},
 }
 
 func TestStringToNumbers(t *testing.T) {

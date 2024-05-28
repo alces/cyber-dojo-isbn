@@ -25,5 +25,6 @@ func isISBN10(isbn string) bool {
 }
 
 func isISBN13(isbn string) bool {
-    return false
+    match, err := regexp.MatchString(`^\d{13}$`, isbn)
+    return err == nil && match
 }

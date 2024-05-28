@@ -30,6 +30,7 @@ var isISBN10TestResults = []struct {
     {"847084525X", true},
     {"X470845258", false},
     {"47084525X", false},
+    {"4700840525X", false},
 }
 
 func TestIsISBN10(t *testing.T) {

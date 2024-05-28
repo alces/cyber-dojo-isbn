@@ -17,3 +17,7 @@ func cleanUp(isbn string) string {
     
     return isbn
 }
+
+func isISBN10(isbn string) bool {
+    return false
+}

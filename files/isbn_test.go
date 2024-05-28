@@ -20,6 +20,10 @@ func TestCleanUp(t *testing.T) {
     }
 }
 
+func TestIsISBN10(t *testing.T) {
+    assert.True(t, isISBN10("0470845252"))  
+}
+
 func TestVefify(t *testing.T) {
     assert.True(t, Verify("0-321-14653-0"))
 }

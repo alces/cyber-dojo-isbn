@@ -171,5 +171,21 @@
       32,
       466297
     ]
+  },
+  {
+    "duration": 4.846117,
+    "colour": "red",
+    "predicted": "green",
+    "revert_if_wrong": "off",
+    "index": 11,
+    "time": [
+      2024,
+      5,
+      28,
+      9,
+      46,
+      53,
+      867804
+    ]
   }
 ]

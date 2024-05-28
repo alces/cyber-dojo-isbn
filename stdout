@@ -5,4 +5,4 @@
         	Test:       	TestIsISBN10
 FAIL
 exit status 1
-FAIL	_/sandbox	0.003s
+FAIL	_/sandbox	0.002s

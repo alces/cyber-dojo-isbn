@@ -1,6 +1,7 @@
 package isbn
 
 import (
+    "regexp"
     "strings"
 )
 
@@ -19,5 +20,6 @@ func cleanUp(isbn string) string {
 }
 
 func isISBN10(isbn string) bool {
-    return false
+    match, err := regexp.MatchString(`^d{10}$`, isbn)
+    return err != nil && match
 }

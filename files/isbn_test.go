@@ -25,6 +25,7 @@ var isISBN10TestResults = []struct {
     expected bool
 } {
     {"0470845252", true},
+    {"470845252", false},
 }
 
 func TestIsISBN10(t *testing.T) {

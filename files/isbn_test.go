@@ -11,6 +11,7 @@ var cleanUpTestResults = []struct{
 } {
     {"0470845252", "0470845252"},
     {"0-470-84525-2", "0470845252"},
+    {"0 470 84525 2", "0470845252"},
 }
 
 func TestCleanUp(t *testing.T) {

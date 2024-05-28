@@ -5,8 +5,17 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var cleanUpTestResults = []struct{
+    argument string
+    expected string
+} {
+    {"0-470-84525-2", "0470845252"},
+}
+
 func TestCleanUp(t *testing.T) {
-    assert.Equal(t, "0470845252", cleanUp("0-470-84525-2"))
+    for _, r := range cleanUpTestResults {
+        assert.Equal(t, r.expected, cleanUp(r.argument))
+    }
 }
 
 func TestVefify(t *testing.T) {

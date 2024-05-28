@@ -28,3 +28,7 @@ func isISBN13(isbn string) bool {
     match, err := regexp.MatchString(`^\d{13}$`, isbn)
     return err == nil && match
 }
+
+func stringToNumbers(isbn string) []byte {
+    return []byte{}
+}

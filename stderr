@@ -1,0 +1,3 @@
+# _/sandbox [_/sandbox.test]
+./isbn_test.go:49:6: TestIsISBN10 redeclared in this block
+	./isbn_test.go:36:6: other declaration of TestIsISBN10

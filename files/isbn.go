@@ -23,3 +23,7 @@ func isISBN10(isbn string) bool {
     match, err := regexp.MatchString(`^\d{9}[\dX]$`, isbn)
     return err == nil && match
 }
+
+func isISBN13(isbn string) bool {
+    return false
+}

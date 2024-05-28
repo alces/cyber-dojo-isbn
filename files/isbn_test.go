@@ -54,8 +54,17 @@ func TestIsISBN13(t *testing.T) {
     }
 }
 
+var stringToNumbersTestResults = []struct {
+    argument string
+    expected []byte
+} {
+    {"0470845252", []byte{0, 4, 7, 0, 8, 4, 5, 2, 5, 2}},
+}
+
 func TestStringToNumbers(t *testing.T) {
-    assert.Equal(t, []byte{0, 4, 7, 0, 8, 4, 5, 2, 5, 2}, stringToNumbers("0470845252"))
+    for _, r := range stringToNumbersTestResults {
+        assert.Equal(t, r.expected, stringToNumbers(r.argument))
+    }
 }
 
 func TestVefify(t *testing.T) {

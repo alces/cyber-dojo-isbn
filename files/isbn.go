@@ -21,5 +21,5 @@ func cleanUp(isbn string) string {
 
 func isISBN10(isbn string) bool {
     match, err := regexp.MatchString(`^d{10}$`, isbn)
-    return err != nil && match
+    return err == nil && match
 }

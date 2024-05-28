@@ -46,7 +46,7 @@ var isISBN13TestResults = []struct {
     {"9780470059029", true},
 }
 
-func TestIsISBN10(t *testing.T) {
+func TestIsISBN13(t *testing.T) {
     for _, r := range isISBN13TestResults {
         assert.Equal(t, r.expected, isISBN13(r.argument), r.argument)
     }

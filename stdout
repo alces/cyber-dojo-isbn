@@ -1,1 +1,11 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestIsISBN13 (0.00s)
+    isbn_test.go:51: 
+        	Error Trace:	isbn_test.go:51
+        	Error:      	Not equal: 
+        	            	expected: true
+        	            	actual  : false
+        	Test:       	TestIsISBN13
+        	Messages:   	9780470059029
+FAIL
+exit status 1
+FAIL	_/sandbox	0.008s

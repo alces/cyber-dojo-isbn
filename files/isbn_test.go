@@ -20,8 +20,17 @@ func TestCleanUp(t *testing.T) {
     }
 }
 
+var isISBN10TestResults = []struct {
+    argument string
+    expected bool
+} {
+    {"0470845252", true},
+}
+
 func TestIsISBN10(t *testing.T) {
-    assert.True(t, isISBN10("0470845252"))  
+    for _, r := range isISBN10TestResults {
+        assert.Equal(t, r.expected, isISBN10(r.argument))
+    }
 }
 
 func TestVefify(t *testing.T) {

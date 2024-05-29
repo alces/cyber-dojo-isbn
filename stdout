@@ -1,1 +1,10 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestISBN10Checksum (0.00s)
+    checksum_test.go:9: 
+        	Error Trace:	checksum_test.go:9
+        	Error:      	Not equal: 
+        	            	expected: int(7)
+        	            	actual  : []uint8([]byte{0x0, 0x4, 0x7, 0x1, 0x9, 0x5, 0x8, 0x6, 0x9})
+        	Test:       	TestISBN10Checksum
+FAIL
+exit status 1
+FAIL	_/sandbox	0.004s

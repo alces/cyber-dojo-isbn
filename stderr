@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./checksum_test.go:9:12: undefined: assert.Equals

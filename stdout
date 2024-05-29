@@ -2,9 +2,9 @@
     checksum_test.go:9: 
         	Error Trace:	checksum_test.go:9
         	Error:      	Not equal: 
-        	            	expected: int(7)
-        	            	actual  : uint8(0x0)
+        	            	expected: 0x7
+        	            	actual  : 0x0
         	Test:       	TestISBN10Checksum
 FAIL
 exit status 1
-FAIL	_/sandbox	0.004s
+FAIL	_/sandbox	0.007s

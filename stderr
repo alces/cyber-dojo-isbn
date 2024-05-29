@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./checksum.go:5:19: invalid operation: numbers[i] * (i + 1) (mismatched types byte and int)

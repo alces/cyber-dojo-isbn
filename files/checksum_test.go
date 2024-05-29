@@ -10,6 +10,7 @@ var isbn10ChecksumTestResults = []struct {
     expected byte
 } {
     {[]byte{0, 4, 7, 1, 9, 5, 8, 6, 9}, 7},
+    {[]byte{0, 4, 7, 1, 6, 0, 6, 9, 5}, 2},
 }
 
 func TestISBN10Checksum(t *testing.T) {

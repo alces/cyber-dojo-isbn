@@ -13,5 +13,7 @@ var isbn10ChecksumTestResults = []struct {
 }
 
 func TestISBN10Checksum(t *testing.T) {
-    assert.Equal(t, r.expected, isbn10Checksum(r.argument), r.expected) 
+    for _, r := range isbn10ChecksumTestResults {
+        assert.Equal(t, r.expected, isbn10Checksum(r.argument), r.expected)
+    }
 }    

@@ -1,0 +1,3 @@
+# _/sandbox [_/sandbox.test]
+./checksum.go:4:5: imported and not used: "fmt"
+./checksum.go:11:19: invalid operation: numbers[i] * (i + 1) (mismatched types byte and int)

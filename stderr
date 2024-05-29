@@ -1,1 +1,2 @@
-checksum_test.go:1:1: expected 'package', found 'import'
+# _/sandbox [_/sandbox.test]
+./checksum_test.go:9:12: undefined: assert.Equals

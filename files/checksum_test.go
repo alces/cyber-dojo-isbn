@@ -5,6 +5,13 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var isbn10ChecksumTestResults = []struct {
+    argument []byte
+    expected byte
+} {
+    {[]byte{0, 4, 7, 1, 9, 5, 8, 6, 9}, 7},
+}
+
 func TestISBN10Checksum(t *testing.T) {
-    assert.Equal(t, byte(7), isbn10Checksum([]byte{0, 4, 7, 1, 9, 5, 8, 6, 9})) 
+    assert.Equal(t, r.expected, isbn10Checksum(r.argument), r.expected) 
 }    

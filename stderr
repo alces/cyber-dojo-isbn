@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./checksum_test.go:16:21: undefined: r

@@ -24,6 +24,7 @@ var isbn13ChecksumTestResults = []struct {
     expected byte
 } {
     {[]byte{9, 7, 8, 0, 4, 7, 0, 0, 5, 9, 0, 2}, 9},
+    {[]byte{9, 7, 8, 0, 5, 9, 6, 8, 0, 9, 4, 8}, 5},
 }
 
 func TestISBN13Checksum(t *testing.T) {

@@ -603,5 +603,21 @@
       18,
       17025
     ]
+  },
+  {
+    "duration": 1.317018,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 38,
+    "time": [
+      2024,
+      5,
+      29,
+      7,
+      8,
+      16,
+      377686
+    ]
   }
 ]

@@ -8,4 +8,8 @@ func isbn10Checksum(numbers []byte) byte {
     }
     
     return byte(result % 11)
-}    
+}
+
+func isbn13Checksum(numbers []byte) byte {
+    return 0
+}

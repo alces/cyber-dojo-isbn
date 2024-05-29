@@ -17,4 +17,17 @@ func TestISBN10Checksum(t *testing.T) {
     for _, r := range isbn10ChecksumTestResults {
         assert.Equal(t, r.expected, isbn10Checksum(r.argument), r.expected)
     }
-}    
+}
+
+var isbn13ChecksumTestResults = []struct {
+    argument []byte
+    expected byte
+} {
+    {[]byte{9, 7, 8, 0, 4, 7, 0, 0, 5, 9, 0, 2}, 9},
+}
+
+func TestISBN13Checksum(t *testing.T) {
+    for _, r := range isbn13ChecksumTestResults {
+        assert.Equal(t, r.expected, isbn13Checksum(r.argument), r.expected)
+    }
+}

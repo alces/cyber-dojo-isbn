@@ -1,2 +1,11 @@
-PASS
-ok  	_/sandbox	0.005s
+--- FAIL: TestISBN13Checksum (0.00s)
+    checksum_test.go:31: 
+        	Error Trace:	checksum_test.go:31
+        	Error:      	Not equal: 
+        	            	expected: 0x9
+        	            	actual  : 0x0
+        	Test:       	TestISBN13Checksum
+        	Messages:   	9
+FAIL
+exit status 1
+FAIL	_/sandbox	0.002s

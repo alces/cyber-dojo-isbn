@@ -1,2 +1,11 @@
-PASS
-ok  	_/sandbox	0.004s
+--- FAIL: TestVerifyChecksum (0.00s)
+    checksum_test.go:47: 
+        	Error Trace:	checksum_test.go:47
+        	Error:      	Not equal: 
+        	            	expected: true
+        	            	actual  : false
+        	Test:       	TestVerifyChecksum
+        	Messages:   	0471958698
+FAIL
+exit status 1
+FAIL	_/sandbox	0.003s

@@ -27,5 +27,13 @@ func isbn13Checksum(numbers []byte) byte {
 }
 
 func verifyChecksum(isbn string) bool {
+    nums := stringToNumbers(isbn)
+    
+    if isISBN10(isbn) {
+        return isbn10Checksum(nums) == nums[9]
+    } else if isISBN13(isbn) {
+        return isbn13Checksum(nums) == nums[12]
+    }
+        
     return false
 }

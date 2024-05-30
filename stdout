@@ -1,11 +1,11 @@
---- FAIL: TestVerifyChecksum (0.00s)
-    checksum_test.go:51: 
-        	Error Trace:	checksum_test.go:51
+--- FAIL: TestISBN13Checksum (0.00s)
+    checksum_test.go:33: 
+        	Error Trace:	checksum_test.go:33
         	Error:      	Not equal: 
-        	            	expected: true
-        	            	actual  : false
-        	Test:       	TestVerifyChecksum
-        	Messages:   	9780131495050
+        	            	expected: 0x0
+        	            	actual  : 0xa
+        	Test:       	TestISBN13Checksum
+        	Messages:   	0
 FAIL
 exit status 1
 FAIL	_/sandbox	0.003s

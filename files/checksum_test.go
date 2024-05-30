@@ -25,6 +25,7 @@ var isbn13ChecksumTestResults = []struct {
 } {
     {[]byte{9, 7, 8, 0, 4, 7, 0, 0, 5, 9, 0, 2}, 9},
     {[]byte{9, 7, 8, 0, 5, 9, 6, 8, 0, 9, 4, 8}, 5},
+    {[]byte{9, 7, 8, 0, 1, 3, 1, 4, 9, 5, 0, 5}, 0},
 }
 
 func TestISBN13Checksum(t *testing.T) {
@@ -43,7 +44,6 @@ var verifyChecksumTestResults = []struct {
     {"9780470059029", true},
     {"9780470059026", false},
     {"980470059029", false},
-    {"9780131495050", true},
 }
 
 func TestVerifyChecksum(t *testing.T) {

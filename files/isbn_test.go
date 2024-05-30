@@ -12,7 +12,8 @@ var verifyTestResults = []struct {
     {"0-321-14653-0", true},
     {"0 471 60695 2", true},
     {"0 471 60695 3", false},
-    {"something stange", false},
+    {"something strange", false},
+    {"978 0 471 48648 0", true},
 }
 
 func TestVefify(t *testing.T) {

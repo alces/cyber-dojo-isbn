@@ -1,2 +1,11 @@
-PASS
-ok  	_/sandbox	0.003s
+--- FAIL: TestVefify (0.00s)
+    isbn_test.go:21: 
+        	Error Trace:	isbn_test.go:21
+        	Error:      	Not equal: 
+        	            	expected: true
+        	            	actual  : false
+        	Test:       	TestVefify
+        	Messages:   	978 0 471 48648 0
+FAIL
+exit status 1
+FAIL	_/sandbox	0.005s

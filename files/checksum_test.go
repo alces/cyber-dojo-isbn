@@ -42,6 +42,7 @@ var verifyChecksumTestResults = []struct {
     {"0471958698", false},
     {"9780470059029", true},
     {"9780470059026", false},
+    {"980470059029", false},
 }
 
 func TestVerifyChecksum(t *testing.T) {

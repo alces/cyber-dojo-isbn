@@ -5,6 +5,15 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var verifyTestResults = []struct {
+    argument string
+    expected bool
+} {
+    {"0-321-14653-0", true},
+}
+
 func TestVefify(t *testing.T) {
-    assert.True(t, Verify("0-321-14653-0"))
+    for _, r := range verifyTestResults {
+        assert.Equal(t, r.expected, Verify(r.argument), r.argument)
+    }
 }

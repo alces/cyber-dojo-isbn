@@ -1,11 +1,11 @@
---- FAIL: TestVefify (0.00s)
-    isbn_test.go:21: 
-        	Error Trace:	isbn_test.go:21
+--- FAIL: TestVerifyChecksum (0.00s)
+    checksum_test.go:51: 
+        	Error Trace:	checksum_test.go:51
         	Error:      	Not equal: 
         	            	expected: true
         	            	actual  : false
-        	Test:       	TestVefify
-        	Messages:   	978-0-13-149505-0
+        	Test:       	TestVerifyChecksum
+        	Messages:   	9780131495050
 FAIL
 exit status 1
 FAIL	_/sandbox	0.003s

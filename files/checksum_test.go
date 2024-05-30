@@ -33,6 +33,16 @@ func TestISBN13Checksum(t *testing.T) {
     }
 }
 
+var verifyChecksumTestResults = []struct {
+    argument string
+    expected bool
+} {
+
+    {"0471958697", true},
+}
+
 func TestVerifyChecksum(t *testing.T) {
-    assert.True(t, verifyChecksum("0471958697"), "0471958697")
+    for _, r := range verifyChecksumTestResults {
+        assert.Equal(t, r.expected, verifyChecksum(r.argument), r.argument)
+    }
 }

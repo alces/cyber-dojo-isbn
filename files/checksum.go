@@ -23,7 +23,7 @@ func isbn13Checksum(numbers []byte) byte {
         result += int(numbers[i]) * coef           
     }
     
-    return byte(10 - (result % 10))
+    return byte((10 - (result % 10)) % 10)
 }
 
 func verifyChecksum(isbn string) bool {

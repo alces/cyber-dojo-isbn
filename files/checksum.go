@@ -25,3 +25,7 @@ func isbn13Checksum(numbers []byte) byte {
     
     return byte(10 - (result % 10))
 }
+
+func verifyChecksum(isbn string) bool {
+    return false
+}

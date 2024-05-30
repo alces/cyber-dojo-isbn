@@ -32,3 +32,7 @@ func TestISBN13Checksum(t *testing.T) {
         assert.Equal(t, r.expected, isbn13Checksum(r.argument), r.expected)
     }
 }
+
+func TestVerifyChecksum(t *testing.T) {
+    assert.True(t, verifyChecksum("0471958697"), "0471958697")
+}
